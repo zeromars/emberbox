@@ -1,0 +1,19 @@
+<div class="emberBox">
+    <header>emberbox</header>
+    <main>
+        <section class="playing">
+            <aside class="now-playing-time"></aside>
+            <section class="meta">
+                <span class="now-playing-song">{{currentlyPlaying}}</span>
+            </section>
+        </section>
+        <section class="controls"></section>
+        <section class="playlist">
+            {{#each model as |tune tuneIndex|}}
+                {{#play-song}}
+                    {{tuneIndex}}. {{tune.first_name}} {{tune.last_name}} - {{tune.band_id.name}}                
+                {{/play-song}}
+            {{/each}}
+        </section>
+    </main>
+</div>

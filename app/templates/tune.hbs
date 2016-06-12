@@ -1,0 +1,9 @@
+<h3>Band list</h3>
+
+<div class="band-list">
+    {{#each model as |band|}}
+        <div class="band">
+            <p>{{band.first_name}} {{band.last_name}} - {{band.bandName}}</p>
+        </div>
+    {{/each}}
+</div>

@@ -1,0 +1,15 @@
+<h4>Bands</h4>
+<div class="band-list">
+    {{#each model as |band|}}
+        <div class="band">
+            <p>--start--</p>
+            <p>{{band}}</p>
+            <p>{{band.Musicians}}</p>
+            <p class="band-name">{{band.Musicians.band}}</p>
+            <p class="band-artist">{{band.Musicians.first_name}}</p>
+            <p class="band-artist">{{band.Musicians.last_name}}</p>
+            <p class="band-artist">{{band.Musicians.id}}</p>
+            <p>--end--</p>
+        </div>
+    {{/each}}
+</div>
